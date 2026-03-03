@@ -1,0 +1,275 @@
+:root {
+    --cyber-bg: #0a0a14;
+    --cyber-cyan: #00f0ff;
+    --cyber-cyan-dark: #00aabb;
+    --cyber-glow: #00f0ff88;
+    --text-light: #e0e6f1;
+    --text-muted: #7f8ea1;
+    --accent-color: #ff66cc;
+  }
+  
+  /* Reset basics with cyber rhythm */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Share Tech Mono', monospace;
+    color: var(--text-light);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background-color: var(--cyber-bg);
+    min-height: 100vh;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 1rem 0;
+    overflow: auto;
+    text-align: center;
+  }
+  
+  /* Scrollbar with subtle neon glow */
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--cyber-bg);
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--cyber-cyan-dark);
+    border-radius: 10px;
+    border: 4px solid var(--cyber-bg);
+    transition: background 0.3s ease;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--cyber-cyan);
+  }
+  
+  /* Headings glowing like a city at night */
+  h1, h2, h3, h4, p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 3.5rem;
+    color: var(--cyber-cyan);
+    text-shadow:
+      0 0 5px var(--cyber-cyan),
+      0 0 10px var(--cyber-cyan),
+      0 0 20px var(--cyber-cyan-dark);
+    letter-spacing: 0.1em;
+  }
+  
+  h2 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.3rem;
+    text-shadow: 0 0 4px var(--accent-color);
+  }
+  
+  h3 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.5rem;
+    color: var(--cyber-cyan);
+    text-shadow: 0 0 6px var(--cyber-cyan);
+  }
+  
+  /* Links pulsating in neon */
+  a {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--accent-color);
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  a:visited {
+    color: var(--cyber-cyan-dark);
+  }
+  
+  a:hover, a:focus {
+    color: var(--cyber-cyan);
+    border-bottom-color: var(--cyber-cyan);
+  }
+  
+  /* Page container – sleek and spacious */
+  .page.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Dashboard columns – flexed, fluid, futuristic */
+  .dashboard-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  /* Columns glowing with cyber aura */
+  .column, .columnmiddle {
+    flex: 1 1 400px;
+    background: rgba(0, 240, 255, 0.05);
+    border: 1px solid var(--cyber-cyan-dark);
+    border-radius: 8px;
+    box-shadow:
+      0 0 10px var(--cyber-glow);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    max-height: 62rem;
+    overflow-y: auto;
+  }
+  
+  .column:hover, .columnmiddle:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      0 0 20px var(--cyber-cyan),
+      0 0 30px var(--cyber-cyan);
+  }
+  
+  .column h3 {
+    margin-top: 0;
+    color: var(--cyber-cyan);
+    font-size: 1.5rem;
+    text-shadow: 0 0 6px var(--cyber-cyan);
+  }
+  
+  .column p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Sub-columns shimmering with the same light */
+  .sub-column {
+    background: rgba(0, 240, 255, 0.03);
+    border: 1px solid var(--cyber-cyan-dark);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 8px var(--cyber-glow);
+    transition: transform 0.2s ease;
+  }
+  
+  .sub-column h3 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 4px var(--accent-color);
+  }
+  
+  .sub-column img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 0;
+    object-fit: cover;
+  }
+  
+  /* Poet photo container – spotlight in neon */
+  .poet-photo-container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .poet-photo {
+    width: 100%;
+    max-width: 350px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 4px solid var(--accent-color);
+    box-shadow:
+      0 0 10px var(--accent-color);
+    object-fit: cover;
+  }
+  
+  /* Extra info - subtle, muted neon */
+  .extra-info {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: rgba(0, 240, 255, 0.05);
+    color: var(--text-muted);
+    font-size: 1.1rem;
+  }
+  
+  /* Neon animation pulse */
+  @keyframes colour-cycle {
+    0%   { color: var(--cyber-cyan-dark); }
+    50%  { color: var(--cyber-cyan); }
+    100% { color: var(--cyber-cyan-dark); }
+  }
+  
+  .animated-text {
+    animation: colour-cycle 7s infinite;
+  }
+  
+  /* Responsive whispers for small screens */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2.4rem;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .column, .columnmiddle {
+      flex: 1 1 100%;
+      max-height: none;
+    }
+  
+    .poem-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .return-container {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+    
+    .return-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--cyber-cyan-dark);
+      border: 2px solid var(--cyber-cyan);
+      border-radius: 6px;
+      font-size: 1.2rem;
+      text-shadow: 0 0 5px var(--cyber-cyan);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .return-button:hover {
+      background-color: var(--cyber-cyan);
+      box-shadow: 0 0 10px var(--cyber-cyan);
+    }
+    
+    .dashboard-columns {
+      flex-direction: column;
+      align-items: center; /* or flex-start */
+    }
+  
+  
+    .sub-column.literature {
+        border-color: var(--accent-color);
+    }}
