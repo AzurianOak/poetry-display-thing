@@ -215,3 +215,38 @@ h2 {
     animation: none !important;
   }
 }
+
+.page.dashboard{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* dashboard layout height */
+
+.dashboard-columns{
+  flex: 1;
+  height: calc(100vh - 220px);
+}
+
+/* scrollable columns */
+
+.column{
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+/* nicer scrollbars */
+
+.column::-webkit-scrollbar{
+  width: 8px;
+}
+
+.column::-webkit-scrollbar-track{
+  background: var(--cyber-surface);
+}
+
+.column::-webkit-scrollbar-thumb{
+  background: var(--cyber-cyan-dark);
+  border-radius: 4px;
+}

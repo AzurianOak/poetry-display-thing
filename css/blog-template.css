@@ -50,6 +50,7 @@ body {
     line-height: 1.75;
     padding: var(--space-xl) 1.5rem;
     text-rendering: optimizeLegibility;
+    counter-reset: footnote;
 }
 
 body::before {
@@ -117,14 +118,11 @@ header p {
 .essay-content {
     position: relative;
     z-index: 1;
-
     max-width: var(--max-width);
     margin: 0 auto;
-
     background: var(--bg-surface);
     padding: var(--space-xl);
     border-radius: var(--radius);
-
     border: 1px solid rgba(0, 229, 255, 0.15);
 
     box-shadow:
@@ -160,13 +158,10 @@ header p {
     font-size: 1.4rem;
     margin-top: var(--space-lg);
     margin-bottom: 0.8rem;
-
     color: var(--neon-pink);
     text-shadow: var(--glow-strong);
-
     border-left: 3px solid var(--neon-pink);
     padding-left: 0.8rem;
-
     transition: text-shadow var(--transition);
 }
 
@@ -209,7 +204,7 @@ em {
     }
 }
 
-/* FOOTNOTES SYSTEM */
+/* FOOTNOTES */
 
 .footnote-ref {
     color: var(--neon-blue);
@@ -222,18 +217,15 @@ em {
     text-shadow: var(--glow-soft);
 }
 
+.footnote-ref::before {
+    counter-increment: footnote;
+    content: counter(footnote);
+}
+
 .footnotes-divider {
     margin: var(--space-xl) 0 var(--space-lg);
     border: none;
     border-top: 1px solid rgba(0, 229, 255, 0.25);
-}
-
-.footnotes {
-    margin-bottom: var(--space-lg);
-}
-
-.footnotes h2 {
-    margin-top: 0;
 }
 
 .footnotes ol {
@@ -273,11 +265,96 @@ em {
     font-size: 0.95rem;
 }
 
-body {
-    counter-reset: footnote;
+/* QUOTE BLOCK */
+
+.quote-note {
+    background: rgba(0, 33, 71, 0.85);
+    border: 1px solid rgba(0,229,255,0.25);
+    border-left: 4px solid var(--neon-blue);
+    border-radius: var(--radius);
+    padding: 1.2rem 1.4rem;
+    margin: var(--space-lg) 0;
+    box-shadow: 0 0 18px rgba(0,229,255,0.15);
 }
 
-.footnote-ref::before {
-    counter-increment: footnote;
-    content: counter(footnote);
+.quote-source {
+    font-size: 0.95rem;
+    color: var(--neon-blue);
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+}
+
+.quote-note blockquote {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    color: var(--ink-primary);
+    font-style: italic;
+}
+
+/* =========================
+   FINAL CHAPTER SYSTEM
+========================= */
+
+.chapter{
+    margin-top:2rem;
+    padding-top:0.8rem;
+    border-top:1px solid rgba(0,229,255,0.12);
+}
+
+.chapter + .chapter{
+    margin-top:1.8rem;
+}
+
+.chapter + .chapter + .chapter{
+    margin-top:1.6rem;
+}
+
+.chapter + .chapter + .chapter + .chapter{
+    margin-top:1.4rem;
+}
+
+.chapter:not(:first-child)::before{
+    content:"";
+    display:block;
+    width:38px;
+    height:2px;
+    background:var(--neon-blue);
+    opacity:0.35;
+    margin-bottom:0.5rem;
+}
+
+.chapter-header{
+    margin-bottom:0.25rem;
+}
+
+.chapter-meta{
+    font-size:0.72rem;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--ink-muted);
+    margin-bottom:0.1rem;
+}
+
+.chapter-title{
+    font-family:var(--font-display);
+    font-size:1.55rem;
+    margin:0;
+    color:var(--neon-blue);
+    text-shadow:var(--glow-soft);
+    padding-left:0.6rem;
+    border-left:3px solid var(--neon-blue);
+}
+
+.chapter-header + *{
+    margin-top:0.25rem;
+}
+
+.chapter-list{
+    margin-top:0.3rem;
+    padding-left:1.2rem;
+}
+
+.chapter-list li{
+    margin-bottom:0.35rem;
 }
