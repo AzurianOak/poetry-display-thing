@@ -4,7 +4,7 @@ const quotes = [
         author: "Michel Foucault",
         work: "Madness and Civilization (1961)",
         source: "https://en.wikiquote.org/wiki/Michel_Foucault#History_of_Madness_(1961)",
-        tags: ["#madness", "#division", "#history"],
+        tags: ["#madness", "#division", "#history", "#Foucault", "#Philosophy", "#science"],
         comment: "I think this Foucault quote means that madness does not originate from scientific reason, but rather comes from the mere separation of madness and rationality."
 
     },
