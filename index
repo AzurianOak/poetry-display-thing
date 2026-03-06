@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="Kinnen">
+<meta property="og:description" content="Poetry & Philosophy">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://d3bcb62g1vcxsf.archive.is/z07dp/cbba790e19f88f2d5f1037e32e6802ee043572cf.jpg"">
+<meta property="og:image" content="https://d3bcb62g1vcxsf.archive.is/z07dp/cbba790e19f88f2d5f1037e32e6802ee043572cf.jpg">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:site" content="Poetry & Philosophy">
+<meta name="twitter:title" content="Kinnen">
+<meta name="twitter:description" content="Poetry & Philosophy">
+<meta name="twitter:card" content="Poetry & Philosophy">
+<meta name="twitter:image:src" content="https://d3bcb62g1vcxsf.archive.is/z07dp/cbba790e19f88f2d5f1037e32e6802ee043572cf.jpg"">
+<meta name="theme-color" content="#FD0054">
+
+
+    <title>Poetry Archive</title>
+    <link rel="stylesheet" href="./css/index_styles.css">
+
+</head>
+<body>
+
+    <div class="page dashboard">
+        <div class="header">
+            my poetry archive thing
+        </div>
+
+        <div class="dashboard-columns">
+            <div class="column" id="leftcolumn">
+                <div class="containercolumn" id="mypoems">
+                    <h3>Me</h3>
+                    <p>
+                      <h4>Profiles</h4>
+                      <a href="./my-profile/me.html">Overall Profile</a><br>
+                      <a href="./poets/rainbow/rainbow.html">Poetic Profile</a><br>
+                      <a href="./my-profile/books.html">Book Tracker</a><br>
+                      <a href="./quotes/quotes-index.html">Quote Tracker</a><br>
+
+
+
+                      <h4>Poetry</h4>
+                        <a href="./poets/rainbow/sometimes.html">"Sometimes"</a><br>
+                        <a href="./poets/rainbow/ok.html">"Ok"</a><br>  
+                        <a href="./poets/rainbow/the-well.html">"The Well"</a><br>
+                        <a href="./poets/rainbow/noted.html">"Noted"</a><br>
+                        <a href="./poets/rainbow/above-and-below.html">"Above and Below"</a><br>         
+                        <a href="./poets/rainbow/i-am.html">"I Am — A Fykie Dowf"</a><br>          
+                        <a href="./poets/rainbow/conflagration.html">"Conflagration"</a><br>
+                        <a href="./poets/rainbow/ehwaz.html">"Ehwaz"</a><br>
+                    </p>
+</div>
+  
+                <div class="containercolumn" id="gaypoetry">
+                    <div class="sub-column">
+                        <h3><span class="animated-text">↓ More gay poems here! ↓</span></h3>
+                        <a href="./gay-poems-index.html">
+                          <img src="https://cdn.britannica.com/01/19301-050-959A0EB6/Siegfried-Sassoon-1915.jpg" alt="yaoi" /> <br>
+                        </a>
+                        <h6><i>(there's a lot of <span class="animated-text">gay poems</span> so can't put them all on the homepage :3, so just click the photo above to see all of them)</i></h6>
+                    </div>
+                </div>
+
+                <!-- BLOG -->
+                <div class="containercolumn" id="neural-archives">
+                  <a href="./blog-index.html"><h3>Blog type thing</h3></a>
+                    <a href="./blog-index.html"><p><i>(Essays and notes)</i></p></a>
+
+                </div>
+                <!-- END OF NBLOGEW SECTION -->
+
+
+
+            </div>
+            
+            <div class="columnmiddle" id="middlecolumn">
+              <div class="sub-column">
+            <h3>Poems I Like</h3>
+            <p>
+              <a href="./poets/john-donne/the-flea.html">"The Flea" by John Donne</a> <br>
+              <a href="./poets/john-donne/the-anniversary.html">"The Anniversary" by John Donne</a> <br>
+              <a href="./poets/sassoon/the-hero.html">"The Hero" by John Donne</a> <br>
+              <a href="./poets/clare/i-am.html">"I Am!" by John Clare</a> <br>
+              <a href="./poets/clare/hid-love.html">"I Hid my Love" by John Clare</a><br>
+              <a href="./poets/lord-byron/love-and-death.html">"Love and Death" by Lord Byron</a> <br>
+              <a href="./poets/percy-shelley/loves-philo.html">"Love's Philosophy" by Percy Shelley</a>                
+          </p>
+          </div>
+
+        <div class="sub-column">
+            <h3><span class="animated-text">Gay Poetry</span></h3>
+            <p>
+            <a href="./poets/lord-byron/love-and-death.html">"Love and Death" by Lord Byron</a> <br>
+            <a href="./poets/richard-barnfield/sonnet-8.html">"Sonnet 8" by Richard Barnfield</a> <br>
+            <a href="./poets/richard-barnfield/sonnet-16.html">"Sonnet 16" by Richard Barnfield</a> <br>
+            <a href="./poets/walt-whitman/two-boys.html">“We Two Boys Together Clinging” by Walt Whitman<br>
+            <a href="./poets/wilfred-owen/sunday-1-september-1918-wo.html">"I sit alone at last, and therefore with you" by Sassoon<br>
+            <a href="./poets/wilfred-owen/shadwell-stair.html">"Shadwell Stair" by Wilfren Owen</a>   <br>  
+            <a href="./poets/richard-barnfield/sonnet-11.html">"Sonnet 11" by Richard Barnfield</a>   <br>  
+            <a href="./poets/richard-barnfield/sonnet-16.html">"Sonnet 16" by Richard Barnfield</a>   <br>  
+            <a href="./poets/richard-barnfield/sonnet-17.html">"Sonnet 17" by Richard Barnfield</a> <br>
+            <a href="./poets/richard-barnfield/in-praise.html">"In Praise of Music and Poetry" by Richard Barnfield</a> <br>            
+            </a>            
+        </p>
+        </div>
+            </div>
+            <div class="column" id="rightcolumn">
+                <div class="containercolumn">
+                    <h3>Poet Profiles</h3>
+                    <p> <a href="./poets/john-donne/donne.html">John Donne</a></p>
+            
+                    <p>
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                      <a href="./poets/richard-barnfield/barnfield.html">Richard Barnfield</a>
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                    </p>
+            
+                    <p>
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                      <a href="./poets/lord-byron/byron.html">Lord Byron</a>
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                    </p>
+            
+                    <p> 
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                      <a href="./poets/sassoon/sassoon.html">Siegfreid Sassoon</a>
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                    </p>
+            
+                    <p> 
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                      <a href="./poets/wilfred-owen/wilfred-owen.html">Wilfred Owen</a>
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                    </p>
+            
+                    <p> 
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                      <a href="./poets/rainbow/rainbow.html">Rainbow :3 (me)</a>
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because I'm a raging faggot
+                        </span>
+                      </span>
+                    </p>
+            
+                    <p> <a href="./poets/clare/clare.html">John Clare</a></p>
+                    <p> <a href="./poets/percy-shelley/p-shelly.html">Percy Shelley</a></p>
+            
+                    <p> 
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                      <a href="./poets/walt-whitman/whitman.html">Walt Whitman</a>
+                      <span class="tooltip-wrapper">
+                        <img class="icon" src="images/gay-male.svg" alt="Gay Male Icon">
+                        <span class="tooltip-text">
+                          This is the gay male flag, because the poet was gay or proof exists of them having same-sex attraction :3
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile) {
+        document.body.classList.add('mobile');
+      }
+    </script>
+</body>
+</html>
