@@ -1,0 +1,322 @@
+/* =========================================================
+ROOT VARIABLES
+========================================================= */
+
+:root {
+    --cyber-bg: #0a0a14;
+    --cyber-cyan: #00f0ff;
+    --cyber-cyan-dark: #00aabb;
+    --text-light: #e0e6f1;
+    --accent-color: #ff66cc;
+
+    --foucault-bg: #0a0a0a;
+    --foucault-card: #111111;
+    --foucault-accent: #c62828;
+}
+
+/* =========================================================
+GLOBAL RESET + TRANSITION ENGINE
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    transition:
+        background 0.35s ease,
+        color 0.35s ease,
+        border 0.35s ease,
+        box-shadow 0.35s ease,
+        transform 0.35s ease,
+        opacity 0.4s ease,
+        max-width 0.5s ease;
+}
+
+body {
+    padding: 2.5rem 1.5rem;
+    min-height: 100vh;
+}
+
+/* =========================================================
+LAYOUT
+========================================================= */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.archive-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.archive-controls {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 1.2rem;
+    opacity: 0.7;
+}
+
+/* =========================================================
+MARGINALIA WRAPPER
+========================================================= */
+
+.quote-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 720px;
+    margin-bottom: 2rem;
+    align-items: center;
+    transition: max-width 0.5s ease;
+}
+
+@media (min-width: 1000px) {
+    .quote-wrapper.show-comment {
+        max-width: 1100px;
+        grid-template-columns: 720px 1fr;
+        gap: 40px;
+    }
+}
+
+.side-comment {
+    opacity: 0;
+    transform: translateX(20px);
+    pointer-events: none;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 10px 20px;
+    border-left: 2px solid transparent;
+    display: none;
+}
+
+.quote-wrapper.show-comment .side-comment {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* =========================================================
+QUOTE CARD BASE
+========================================================= */
+
+.quote {
+    width: 100%;
+    max-width: 720px;
+    padding: 1.6rem 1.8rem;
+    border-radius: 10px;
+    position: relative;
+    line-height: 1.75;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.quote p {
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+}
+
+.author {
+    margin-top: 12px;
+    opacity: 0.85;
+}
+
+.tags {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    letter-spacing: 0.02em;
+}
+
+/* Toggle Button */
+
+.marginalia-toggle {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 0.75rem;
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 2px 4px;
+    opacity: 0.45;
+    color: inherit;
+}
+
+.marginalia-toggle:hover {
+    opacity: 1;
+}
+
+/* Quote Animation */
+
+.quote-text {
+    transition:
+        opacity 0.28s ease,
+        transform 0.28s ease;
+}
+
+.quote-text.fade-out {
+    opacity: 0;
+    transform: translateY(4px);
+}
+
+.quote-text.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================================
+CYBERPUNK MODE
+========================================================= */
+
+body.cyber {
+    background: var(--cyber-bg);
+    color: var(--text-light);
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body.cyber h1 {
+    color: var(--cyber-cyan);
+    text-shadow:
+        0 0 8px rgba(0, 240, 255, 0.9),
+        0 0 20px rgba(0, 240, 255, 0.55);
+}
+
+body.cyber .quote {
+    border: 1px solid var(--cyber-cyan-dark);
+    background: rgba(0, 240, 255, 0.03);
+    box-shadow:
+        0 0 18px rgba(0, 240, 255, 0.18),
+        inset 0 0 12px rgba(0, 240, 255, 0.04);
+}
+
+body.cyber .side-comment {
+    color: var(--accent-color);
+    border-left-color: var(--cyber-cyan);
+    text-shadow: 0 0 5px rgba(255, 102, 204, 0.3);
+}
+
+/* =========================================================
+FOUCAULT MODE
+========================================================= */
+
+body.foucault {
+    background: var(--foucault-bg);
+    color: #f0f0f0;
+    font-family: 'Special Elite', monospace;
+}
+
+body.foucault h1 {
+    color: var(--foucault-accent);
+    border-bottom: 2px solid #8b0000;
+}
+
+body.foucault .quote {
+    background: var(--foucault-card);
+    border-left: 4px solid var(--foucault-accent);
+}
+
+body.foucault .side-comment {
+    color: #bbb;
+    font-style: italic;
+    border-left-color: var(--foucault-accent);
+}
+
+/* Search Box */
+
+#searchInput {
+    width: 100%;
+    max-width: 720px;
+    display: block;
+    margin: 0 auto 2rem auto;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+body.cyber #searchInput {
+    background: rgba(0, 240, 255, 0.04);
+    border: 1px solid var(--cyber-cyan-dark);
+    color: var(--text-light);
+}
+
+body.foucault #searchInput {
+    background: #111;
+    color: #f0f0f0;
+    border: none;
+    border-left: 4px solid var(--foucault-accent);
+}
+
+/* Source Link */
+
+.source-link {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    opacity: 0.75;
+}
+
+body.cyber .source-link { color: var(--cyber-cyan); }
+body.foucault .source-link { color: #ff5252; }
+
+/* Buttons */
+
+button {
+    cursor: pointer;
+    padding: 7px 14px;
+    margin: 4px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+body.cyber button {
+    color: var(--cyber-cyan);
+    border-color: rgba(0, 240, 255, 0.25);
+}
+
+body.foucault button {
+    color: #c62828;
+    border-color: rgba(198, 40, 40, 0.25);
+}
+
+/* Archive Navigation Metadata Block */
+
+.archive-meta-nav {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    opacity: 0.6;
+
+    transition: opacity 0.3s ease;
+}
+
+/* Link Styling (Theme Adaptive) */
+
+.archive-meta-nav a {
+    text-decoration: none;
+    border-bottom: 1px dashed currentColor;
+    padding-bottom: 2px;
+}
+
+body.cyber .archive-meta-nav a {
+    color: var(--cyber-cyan);
+}
+
+body.foucault .archive-meta-nav a {
+    color: #ff5252;
+}
+
+.archive-meta-nav:hover {
+    opacity: 1;
+}

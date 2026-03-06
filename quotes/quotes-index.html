@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Quote Archive</title>
+
+<link rel="stylesheet" href="../css/quotes.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Special+Elite&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="cyber">
+
+<div class="page dashboard">
+
+<!-- Archive Title -->
+<header class="archive-title">
+
+<h1 class="animated-text">Quote Archive</h1>
+
+<div class="archive-meta-nav">
+    <a href="../index.html" target="_blank" rel="noopener">
+        ← Return to index
+    </a>
+</div>
+
+</header>
+
+<!-- Theme Controls -->
+<nav class="archive-controls">
+<button onclick="setTheme('cyber')">Cyberpunk</button>
+<button onclick="setTheme('foucault')">Foucault</button>
+</nav>
+
+<!-- Search Layer -->
+<section class="search-box">
+<input id="searchInput"
+placeholder="Search quotes, authors, or #tags">
+</section>
+
+<!-- Archive Content -->
+<main>
+<section id="quoteContainer"></section>
+</main>
+
+</div>
+
+<script src="quotes.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
