@@ -1,4 +1,26 @@
 const quotes = [
+
+
+
+
+    {
+        text: "As soon as Wittgenstein discovered philosophy, it became a matter of life and death for him.",
+        author: "Paul Strathern",
+        work: "Wittgenstein: Philosophy in an Hour (2012)",
+        source: "https://youtu.be/0kD7Y6WD5Cg",
+        tags: ["#Wittgenstein", "#Philosophy", "#passion", "#death" ],
+        comment: "This resonates with me so much, philosophy really is that one thing I can say I live for. Everything comes second to it."
+    },
+
+    {
+        text: "I believe [Foucault] in some newspaper, advocating the abolition of the death penalty and also the abolition of all punishment altogether—in other words, that we should just open prisons up. Now this may sound like a joke, but he's, I think, quite serious. I don't see how he can, as a Nietzschean, make any other argument. He seriously believes that all moral judgment and all political coercion behind it is, in fact, the arbitrary will to power of some subset of society. He says there's no possible legitimizing discourse for that. [...] But the point with Foucault is that he's not afraid to say what other people will, with some justice, regard as outrageous. The reason why is that he's taking this project of human freedom—this idea of questioning and undermining the category of transgression—the mad or the criminal altogether. He wants to abolish it. He literally intends to get beyond good and evil, so it's hard to imagine a more radical reading of Nietzsche.",
+        author: "Michael Sugrue, PhD",
+        work: "Foucault Power, Knowledge and Post-structuralism (1992)",
+        source: "https://youtu.be/KY9LwCeP7Ug?t=380",
+        tags: ["#prison", "#Foucault", "#Nietzsche", "#Philosophy", "#morality" ],
+        comment: "I think this is a really cool approach to philosophy, not caring if the view is controversial and sorta just following the paper trail so to speak"
+    },
+
     {
         text: "The gesture that divides madness is the constitutive one, not the science that grows up in the calm that returns after the division has been made.",
         author: "Michel Foucault",
