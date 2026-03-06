@@ -358,3 +358,53 @@ em {
 .chapter-list li{
     margin-bottom:0.35rem;
 }
+
+
+/* FOOTNOTE LINKS — POLISHED STYLE */
+
+.footnote-ref {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 0.75rem;
+    color: var(--neon-blue);
+    text-decoration: none;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 229, 255, 0.4);
+
+    margin-left: 3px;
+
+    transition: all var(--transition);
+    vertical-align: super;
+}
+
+.footnote-ref:hover {
+    background: rgba(0, 229, 255, 0.08);
+    box-shadow: var(--glow-soft);
+    border-color: var(--neon-blue);
+    transform: translateY(-1px) scale(1.05);
+}
+
+/* FOOTNOTE BACK LINKS */
+
+.footnote-back {
+    display: inline-block;
+
+    color: var(--neon-pink);
+    text-decoration: none;
+    font-weight: 500;
+
+    margin-left: 0.6rem;
+
+    transition: all var(--transition);
+}
+
+.footnote-back:hover {
+    text-shadow: var(--glow-strong);
+    transform: translateX(-2px);
+}
