@@ -260,3 +260,34 @@ a:hover, a:focus {
   background: var(--cyber-cyan);
   box-shadow: 0 0 20px var(--cyber-cyan);
 }
+
+/* New class to simulate Word's Tab spacing */
+.tab-spaced {
+  /* This forces every single space to be wide like a tab */
+  word-spacing: 2.5rem; 
+  
+  /* This ensures the browser doesn't collapse your existing spaces/tabs */
+  white-space: pre-wrap; 
+  
+  /* Optional: keeps the lines from feeling too squashed vertically */
+  line-height: 2.2;
+  
+  /* Centers the block but keeps the text alignment consistent */
+  display: block;
+  margin: 0 auto;
+}
+
+.tab-spaced {
+  word-spacing: 2.5rem; /* This creates the "Tab" effect between words */
+  white-space: pre-wrap; /* Ensures line breaks and spaces stay put */
+  line-height: 2.2;      /* Spaced out vertically to match the wide horizontal gaps */
+  text-align: center;
+}
+
+/* Adjust for smaller screens so words don't fly off the edge */
+@media (max-width: 600px) {
+  .tab-spaced {
+    word-spacing: 1.2rem; 
+    font-size: 0.9rem;
+  }
+}
