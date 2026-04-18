@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vegan Hub</title>
+
+<style>
+:root{
+  --bg:#0f172a;
+  --card:#1e293b;
+  --accent:#22c55e;
+  --text:#e2e8f0;
+  --muted:#94a3b8;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Segoe UI,sans-serif}
+body{background:var(--bg);color:var(--text);cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><circle cx='4' cy='4' r='3' fill='%2322c55e'/></svg>") 4 4, auto;} 
+
+a:hover{cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><circle cx='4' cy='4' r='3' fill='%2322c55e'/></svg>") 4 4, pointer;}
+
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:1.5rem 2rem;
+  position:sticky;top:0;
+  background:rgba(15,23,42,.85);
+  backdrop-filter:blur(10px);
+}
+
+header h1{color:var(--accent);font-size:1.6rem}
+
+/* Vegan-styled links */
+a{
+  color:#4ade80;
+  text-decoration:none;
+  position:relative;
+  transition:.25s;
+}
+
+a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-2px;
+  width:0%;
+  height:2px;
+  background:linear-gradient(90deg,#22c55e,#86efac);
+  transition:.25s;
+}
+
+a:hover{color:#bbf7d0}
+a:hover::after{width:100%}
+
+nav a{
+  margin-left:1.2rem;
+  font-size:.9rem;
+  padding:.4rem .9rem;
+  border-radius:999px;
+  background:#14532d;
+  color:#dcfce7;
+  border:1px solid #22c55e;
+  text-decoration:none;
+}
+
+nav a::after{display:none}
+
+nav a:hover{
+  background:#166534;
+  color:#bbf7d0;
+}
+
+nav a:hover{background:rgba(34,197,94,0.25)}
+
+.hero{
+  text-align:center;
+  padding:5rem 2rem;
+  background:linear-gradient(135deg,#022c22,#065f46);
+}
+.hero h2{font-size:2.4rem;margin-bottom:.5rem}
+.hero p{color:var(--muted)}
+
+.section{max-width:1100px;margin:auto;padding:3rem 1.5rem}
+.section h3{margin-bottom:1.5rem;color:var(--accent)}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:1.5rem;
+}
+
+.card{
+  background:var(--card);
+  padding:1.2rem;
+  border-radius:14px;
+  transition:.25s;
+  border:1px solid transparent;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  border-color:var(--accent);
+}
+
+.card h4{margin-bottom:.6rem;font-size:1.05rem}
+.card ul{list-style:none}
+.card li{
+  font-size:.85rem;
+  color:var(--muted);
+  padding:.2rem 0;
+}
+
+.card a{display:inline-block;margin-top:.2rem;font-weight:500}
+
+footer{
+  text-align:center;
+  padding:2rem;
+  font-size:.8rem;
+  color:var(--muted);
+}
+
+
+
+
+
+
+/* Hover info box (clean + usable) */
+.info{
+  position:relative;
+  cursor:inherit;
+}
+
+.info .info-box{
+  display:none;
+  position:absolute;
+  top:120%;
+  left:0;
+  background:#1e293b;
+  color:#bbf7d0;
+  padding:.5rem .7rem;
+  border-radius:8px;
+  font-size:.75rem;
+  max-width:220px;
+  line-height:1.4;
+  border:1px solid #22c55e;
+  box-shadow:0 6px 16px rgba(0,0,0,0.3);
+  z-index:10;
+}
+
+.info:hover .info-box{
+  display:block;
+}
+
+
+
+/* Vegan scrollbar */
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background:#020617;
+}
+
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(180deg,#22c55e,#4ade80);
+  border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#16a34a;
+}
+
+/* Firefox */
+html{
+  scrollbar-width:thin;
+  scrollbar-color:#22c55e #020617;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Vegan Hub</h1>
+<nav>
+<a href="#food">Food</a>
+<a href="#drinks">Drinks</a>
+<a href="#resources">Resources</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Vegan Food, Drink, and Resources</h2>
+<p>My attempt at a clear and concise vegan guide</p>
+</section>
+
+<section id="food" class="section">
+<h3>Food</h3>
+<div class="grid">
+
+<div class="card">
+<h4>Snacks</h4>
+<ul>
+<li>Ritz Original</li>
+<li>Oreo Original</li>
+<li>Jammie Dodgers</li>
+<li>Biscoff Cookies</li>
+<li>Skips</li>
+<li>Pringles Original</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Sauces</h4>
+<ul>
+<li>BBQ Sauce (Co-Op)</li>
+<li>BBQ Sauce (Tesco)</li>
+<li>BBQ Sauce (Sainsbury)</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Cereal</h4>
+<ul>
+<li>Shreddies Original</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Noodles</h4>
+<ul>
+<li>Soba Chilli Noodles</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Meat Alternatives</h4>
+<ul>
+<li>Quorn Fillet Burger</li>
+<li>Quorn Nuggets</li>
+<li>Quorn Sausage Rolls</li>
+<li>Buffalo Fillets</li>
+<li>Linda McCartney Meatballs</li>
+<li>Plant Pioneers Kyiv</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Sides</h4>
+<ul>
+<li>Birds Eye Wedges</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="drinks" class="section">
+<h3>Drinks</h3>
+<div class="grid">
+
+<div class="card">
+<h4>Soft Drinks</h4>
+<ul>
+<li>Dr Pepper</li>
+<li>Sprite</li>
+<li>Pepsi Max</li>
+<li>Irn-Bru</li>
+<li>Coke Zero</li>
+<li>Fanta Orange Zero</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Energy</h4>
+<ul>
+<li>Lucozade</li>
+<li>Monster Ultra</li>
+<li>Monster Original</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Alcohol</h4>
+<ul>
+<li>Smirnoff Vodka</li>
+<li>Smirnoff ICE (possibly? See <a href="https://www.barnivore.com/products/3737-smirnoff-ice">here</a>)</li>
+<li>WKD (All of them)</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<section id="resources" class="section">
+<h3>Resources</h3>
+<div class="grid">
+
+    <div class="card">
+        <h4>Apps</h4>
+        <ul>
+          <li class="info">HappyCow
+            <div class="info-box">
+              Shows you what places to eat are vegan, vegetarian or have options for either in your area
+            </div>
+          </li>
+          <li>Cruelty Scanner</li>
+        </ul>
+        </div>
+
+<div class="card">
+<h4>Websites/General</h4>
+<ul>
+<li class="info">
+<a href="https://www.barnivore.com/">Barnivore</a>
+<div class="info-box">Can tell you if almost <i>any</i> alcoholic drink is vegan friendly</div>
+</li>
+<li><a href="https://veganuary.com/">Veganuary</a></li>
+<li class="info">
+    <a href="https://www.veganfoodandliving.com/">Vegan Food & Living</a>
+    <div class="info-box">Vegan magazine, lots of useful information</div>
+    </li>
+</ul>
+</div>
+
+<div class="card"> <h4>Content</h4> <ul> <li><a href="https://www.youtube.com/channel/UCVRrGAcUc7cblUzOhI1KfFg">Earthing Ed (YouTube)</a></li> </ul> </div>
+
+<div class="card"> <h4>Recipes</h4> <ul> <li><a href="https://plantbasedrdblog.com/">Plant-based RD</a></li> <li><a href="https://www.eatfigsnotpigs.com/">Eat Figs, Not Pigs</a></li> </ul> </div>
+
+<div class="card">
+    <h4>Shopping</h4>
+    <ul>
+        <li><a href="https://www.sainsburys.co.uk/gol-ui/groceries/dietary-and-world-foods/vegan/vegan-drink/c:1019244">Sainsbury's Vegan Drinks</a></li>
+        <li><a href="https://www.sainsburys.co.uk/gol-ui/groceries/dietary-and-world-foods/vegan/vegan-food/c:1019245">Sainsbury's Vegan Food</a></li>     
+        <li><a href="https://www.vegansupermarket.co.uk/">Vegan Supermarket</a></li>
+        <li><a href="https://alternativestores.com/">Alternative</a></li>
+        <li><a href="https://www.ethicalsuperstore.com/">Ethical Superstore</a></li>
+        
+    </ul>
+    </div>
+
+</div>
+</section>
+
+<footer>
+<p>© Kinnen</p>
+</footer>
+
+</body>
+</html>
